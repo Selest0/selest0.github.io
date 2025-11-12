@@ -1050,47 +1050,13 @@ div#app {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#app > main > div.content > div > form > div.textarea-wrapper > textarea::-webkit-scrollbar {
+    width: 14px;
+}
+#app > main > div.content > div > form > div.textarea-wrapper > textarea::-webkit-scrollbar-thumb {
+    background-color: #606060;
+    border-radius: 15px 0 0 15px;
+}
 
 
 [src="//beon.fun/i/offline.png"], [src="//beon.fun/i/online.png"] {
