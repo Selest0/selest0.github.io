@@ -32,7 +32,6 @@ div, a { font-family: 'Play' !important; text-decoration: none !important; }
 .blog__last-comments, 
 #app > main > div.content > div.post-content > div.small-text + div + .text-right + div > .user.post-title-user, 
 #app > main > div.content > h1 + div > h1 + div > .post-title-user, 
-#app > main > div.content > .post-content + #newpostform, 
 #app > main > div.content > div.textareabg > p, 
 #newpostform > form > p, 
 #messageform > div.textarea-wrapper + input + br,
