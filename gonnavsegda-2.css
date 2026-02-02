@@ -2,6 +2,8 @@
     margin: -20px 0px 0px -20px;
 }
 
+.navbar .m2 { display: none; }
+
 .post-content .text-right + div + div.post-row .post-avatar {
     margin: 0px 5px 0px 5px;
 }
