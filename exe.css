@@ -109,7 +109,7 @@ margin: 11px 0px 0px -23px;
  }
 
 .modal-backdrop.show {
-    z-index: 999999;
+    z-index: 999;
 }
 
  .modal-body {
