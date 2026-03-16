@@ -1665,6 +1665,7 @@ position-area: top;
     overflow: auto;
     max-width: 90%;
     max-height: calc(100% - 100px);
+    z-index: 9999;
 }
 
 .notifications__comments .left-menu-text a:hover {
