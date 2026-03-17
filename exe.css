@@ -847,7 +847,9 @@ display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
- 
+
+
+.post-content .post-text.comment-text,
 .post-content.post-page .post-text.comment-text {
         background: #ffffff;
         border: 1px solid;
@@ -856,6 +858,7 @@ display: flex;
         max-width: 100%;
         padding: 2px 6px 0px 6px;
 }
+.post-content .post-opt,
 .post-content.post-page .post-opt {
         max-width: 100%;
         display: flex;
