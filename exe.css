@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 div, a { font-family: 'Play' !important; text-decoration: none !important; }
 
+
+.post-base  .post__tags-list {
+        width: 100%;
+        background: unset;
+        border: unset;
+        font-size: 0;
+        margin: 0px 0px 4px 0px;
+        letter-spacing: 0;
+    }
+
+.post-content .post__tags-list a {
+    color: black !important;
+}
+
 .d-inline.font-weight-bold {
     display: block !important;
 }
@@ -849,6 +863,7 @@ display: flex;
 }
 
 
+.post-content .post-text,
 .post-content .post-text.comment-text,
 .post-content.post-page .post-text.comment-text {
         background: #ffffff;
@@ -858,7 +873,7 @@ display: flex;
         max-width: 100%;
         padding: 2px 6px 0px 6px;
 }
-.post-content .post-opt,
+
 .post-content.post-page .post-opt {
         max-width: 100%;
         display: flex;
@@ -919,7 +934,8 @@ display: flex;
     display: flex;
     align-items: center;
 }
- 
+
+.post-opt.row .col-md-6 a,
 .container-fluid .row .col-md-6 a,
 [type=reset], [type=submit], button, html [type=button],
 .content a[href*="/subscribe"],
@@ -942,12 +958,15 @@ display: flex;
 
 margin: unset;
     }
+
+
 .container-fluid .row .col-md-6 a,
 [type=reset], [type=submit], button, html [type=button] {
         font-size: 14px;
         padding: 0px 6px;
 }
 
+.post-opt.row .col-md-6 a:hover,
 .container-fluid .row .col-md-6 a:hover,
 .content a[href*="/subscribe"]:hover,
 .content a[href*="/unsubscribe"]:hover,
@@ -1077,12 +1096,24 @@ h3.left-menu-text:after {
     color: black;
 }
 
+
+
+
+ .post-opt .col-md-6 > .post-likes-count {
+    background: lightblue !important;
+    color: white !important;
+    letter-spacing: 0 !important;
+}
+
+
+
+
+
 .comment-text + .post-opt.mt-3 a,
 .fast-quote,
 [onclick="deleteComment(this)"],
 
 .hamburger-menu .menu__btn,
-
 .repostbutton, 
 .bookmarkbutton,
  .complaintbutton,
@@ -1137,12 +1168,41 @@ margin: unset;
         font-size: 12px;
 }
 
-.post-opt.col-md-6.text-right {
-    right: 0;
-        bottom: 0;
+
+.row.w-100.mt-3.post-opt .col-md-6.text-right {
+    font-size: 12px;
+    padding: 2px 8px;
+    background: #f0f0f0;
+    border: 1px solid #d0d0d0;
+    box-shadow: inset 1px 1px 0 #fff;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none !important;
+    text-transform: lowercase;
+    color: black !important;
+    display: inline-block;
+    max-height: 25px;
+    overflow: hidden;
+    word-break: break-all;
+    
+}
+.row.w-100.mt-3.post-opt .col-md-6.text-right {
+    all: unset;
+    right: 20px;
+    bottom: 0px;
     position: absolute;
     justify-content: flex-end;
-        max-width: max-content !important;
+    max-width: max-content !important;
+    height: 25px;
+}
+
+.post-opt.col-md-6.text-right {
+    all: unset;
+    right: 20px;
+    bottom: 10px;
+    position: absolute;
+    justify-content: flex-end;
+    max-width: max-content !important;
+    /* all: unset; */
 }
 
 .post-opt.col-12.col-md-6 .post__tags-list  {
@@ -1172,13 +1232,12 @@ margin: unset;
         border-color: #999 #d0d0d0 #d0d0d0 #999;
 }
  
-.row.w-100.mt-3 .col-md-6,
-.post-opt.col-12.col-md-6 {
+.row.w-100.mt-3 .col-md-6, .col-md-6 {
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-padding: 0;
+        padding: 0;
 }
 .post-row .row.w-100.mt-3 {
         background: #f0f0f0;
@@ -1192,6 +1251,23 @@ padding: 0;
         display: flex;
         flex-direction: column-reverse;
         padding: 10px 0 0 0;
+}
+
+.post-content .post-row .row.w-100.mt-3.post-opt {
+     max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    margin: 0px 10px !important;
+    border: unset !important;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    margin: 0px 0px 10px 10px !important;
+
 }
 
 .post-header:after {
@@ -1219,6 +1295,7 @@ padding: 2px 6px 0px 6px;
         overflow: hidden;
         height: 84px;
 }
+
 
 .post-content.post-page h1,
 .post-title {
@@ -1480,6 +1557,15 @@ margin-right: 4px;
 .navbar  + .crumbs span.crumb-item:first-child:after  {
 content: '.exe';
 }
+
+
+
+.post-content .post__tags-list a {
+    background: #ffffff !important;
+    border: 1px solid !important;
+    border-color: #999 #d0d0d0 #d0d0d0 #999 !important;
+}
+
 
 .py-4 + .crumbs {
         position: absolute;
@@ -2049,4 +2135,5 @@ display: none;
 .comment-content .comment-row .comment-text,
 .post-row > div.post-text {
     font-size: 13px;
+}
 }
