@@ -1867,6 +1867,11 @@ div#app {
     all: unset;
 }
 
+.row.w-100.mt-3.post-opt .col-md-6.text-right {
+        height: 28px;
+}
+        
+
 .navbar {
     position: fixed;
     z-index: 99999;
