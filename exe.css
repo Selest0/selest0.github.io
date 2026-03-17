@@ -1232,7 +1232,7 @@ margin: unset;
         border-color: #999 #d0d0d0 #d0d0d0 #999;
 }
  
-.row.w-100.mt-3 .col-md-6, .col-md-6 {
+.row.w-100.mt-3 .col-md-6  {
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
