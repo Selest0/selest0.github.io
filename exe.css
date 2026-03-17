@@ -872,6 +872,11 @@ display: flex;
         margin: 0px 0px 4px 0px;
         letter-spacing: 0;
     }
+
+
+.post-content .post__mood,
+.post-content .post__musicplay,
+.post-content .post__wish,
 .post-content.post-page .post__mood,
 .post-content.post-page .post__musicplay,
 .post-content.post-page .post__wish {
@@ -1148,6 +1153,7 @@ margin: unset;
 
 .messageform__taglinks.collapse.show { font-size: 0; }
 .messageform__taglinks.collapse.show .messageform__taglink.tag,
+.post-content .post__tags-list a,
 .post-content.post-page .post__tags-list a,
 .post-opt.col-12.col-md-6 .post__tags-list a {
         font-size: 12px;
