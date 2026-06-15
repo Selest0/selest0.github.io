@@ -1981,6 +1981,7 @@ min-width: auto;
         width: 26px;
 } 
 
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"],
 [style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"] {
         display: block !important;
         z-index: 999999;
