@@ -2057,7 +2057,7 @@ div.left-menu:hover {
     margin: unset;
 }
 
-.left-menu > div.left-menu__user-notification, .left-menu__friends {
+.left-menu > div.left-menu__user-notification, .left-menu__friends, [class^="blog_"]:not(.textareabg [class^="blog_"]) {
         position: unset;
         width: 100%;
         height: max-content;
@@ -2068,17 +2068,7 @@ div.left-menu:hover {
         background: white;
         box-shadow: inset 1px 0 0 0px #cacaca, inset -1px 0 0 0px #cacaca;
 }
-
-[class^="blog_"] {
-        position: unset;
-        width: 100%;
-        height: max-content;
-        max-width: unset;
-        margin: unset;
-        padding: 0px 20px;
-        background: white;
-        box-shadow: inset 1px 0 0 0px #cacaca, inset -1px 0 0 0px #cacaca;
-}
+ 
 
 #csseditortext::-webkit-scrollbar {
     width: 20px;
