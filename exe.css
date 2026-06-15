@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 div, a { font-family: 'Play' !important; text-decoration: none !important; }
+.blog__refferers {
+        display: none !important;
+}
 
+.bodybg {
+    justify-items: center;
+}
 
 .post-base  .post__tags-list {
         width: 100%;
